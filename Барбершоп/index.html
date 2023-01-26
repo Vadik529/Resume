@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Барбершоп "Бородинский"</title>	
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet"  href="normalize.css">
+	<link rel="stylesheet"  href="style/style.css" >
+</head>
+
+<body class="page">
+<header class="main-header">
+	<nav class="main-navigation">
+		<a class="main-header-logo">
+			<img src="img/index-logo.svg" width="368" height="500" alt="Логотип барбершопа Бородинский">
+		</a>
+		<div class="main-navigation-wrapper">
+			<div class="container">
+				<h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
+			<ul class="site-navigation">
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="news.html">Новости</a></li>
+				<li><a href="price.html">Прайс-лист</a></li>
+				<li><a href="catalog.html">Магазин</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+			<ul class="user-navigation">
+				<li>
+					<a class="login-link" href="#">Вход</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<main class="container">	
+	<section class="features">
+		<ul class="feature-list">
+			<li class="feature-item">
+				<h3>Быстро</h3>
+				<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+			</li>
+			<li class="feature-item">
+				<h3>Круто</h3>
+				<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае - внешне.</p>
+			</li>
+			<li class="feature-item">
+				<h3>Дорого</h3>
+				<p>Наши мастера - профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не показывает определённый статус?</p>
+			</li>
+		</ul>
+	</section>
+
+	<div class="index-columns">
+		<section class="news">
+			<h2>Новости</h2>
+			<ul class="news-list">
+				<li class="news-item">
+					<p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+					<time datetime="2022-05-1">1 мая</time>
+				</li>
+				<li class="news-item">
+					<p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+					<time datetime="2022-05-04">4 мая</time>
+				</li>
+				<a class="button" href="news.html">Все новости</a>
+			</ul>
+		</section>
+
+		<section class="gallery">
+			<h2>Фотогалерея</h2>
+				<div class="gallery-container">
+					<figure class="gallery-content">
+						<a href="#">
+							<img src="img/studio.jpg" width="246" height="164" alt="Интерьер">
+						</a>
+					</figure>
+					<button class="button gallery-button gallery-button-back" type="button">Назад</button>
+					<button class="button gallery-button gallery-button-next" type="button">Вперёд</button>
+				</div>
+			</section>
+	</div>
+	
+	<div class="index-columns">
+		<section class="contacts">
+			<h2>Контактная информация</h2>
+			<p>
+			Барбершоп "Бородинский"<br>
+			Адресс: г.Одесса, Пантелеймоновская, 28-А<br>
+			Телефон: +380731254155
+			</p>
+			<p>
+			Время работы:<br>
+			пн-пт: с 10:00 до 22:00<br>
+			сб-вс: с 10:00 до 19:00
+			</p>
+			<a class="button" href="map.html">Как проехать</a>
+			<a class="button" href="contacts.html">Обратная связь</a>
+		</section>
+
+		<section class="appointment">
+			<h2>Записаться</h2>
+			<p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+			<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+				<p class="appointment-item">
+					<label for="appointment-date">Дата</label>
+					<input id="appointment-date" type="text" name="date" value="" placeholder="2022-05-05" >
+				</p>
+				<p class="appointment-item">
+					<label for="appointment-time">Время</label>
+					<input id="appointment-time" type="text" name="time" value="" placeholder="17:45">
+				</p>
+				<p class="appointment-item">
+					<label for="appointment-name">Ваше имя</label>
+					<input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+				</p>
+				<p class="appointment-item">
+					<label for="appointment-phone">Телефон</label>
+					<input id="appointment-phone" type="tel" name="phone" value="" placeholder="+380731254155">
+				</p>
+				<button class="button" type="submit">Отправить</button>
+			</form>
+		</section>
+	</div>
+</main>
+
+<footer class="main-footer">
+	<div class="container">
+		<p class="footer-contacts">
+			Барбершоп "Бородинский"<br>
+			Адресс: г.Одесса, Пантелеймоновская, 28-А<br>
+			<a  href="#">Как нас найти?</a><br>
+			Телефон: +38073125415
+		</p>
+		<div class="footer-social">
+			<b>Давайте дружить!</b>
+			<ul>
+				<li><a class="social-button" href="#"><span>Вконтакте</span></a></li>
+				<li><a class="social-button" href="#"><span>Фейсбук</span></a></li>
+				<li><a class="social-button" href="#"><span>Инстаграм</span></a></li>
+			</ul>
+		</div>
+		<p class="footer-copyright">
+			<b>Разработано:</b>
+			<a class="button" href="https://t.me/vereshchak_99">Верещак В.В.</a>
+		</p>
+	</div>
+</footer>
+
+	<section class="modal modal-login">
+		<h2>Личный кабинет</h2>
+		<p class="modal-description">Введите свой логин и пароль.</p>
+		<form class="login-form" action="#" method="post">
+			<p>
+				<label class="visually-hidden" for="user-login">Логин</label>
+				<input id="user-login" type="text" name="login" placeholder="email@example.com" required>
+			</p>
+			<p>
+				<label class="visually-hidden" for="user-password">Пароль</label>
+				<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="........" required>
+			</p>
+			<p class="login-help">
+				<label class="login-checkbox">
+					<input type="checkbox" name="remember" class="visually-hidden">
+					<span class="checkbox-indicator"></span>Запомните меня
+				</label>
+				<a class="restore" href="a">Я забыл пароль!</a>
+			</p>
+			<button class="button button-in" type="submit">Войти</button>	
+		</form>
+			<button class="modal-close" type="button"></button>
+	</section>
+		
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Как до нас добраться</h2>
+		
+			<p>
+				<img src="img/map.jpg" width="766" height="561" alt="Офис компании по улице Пантелеймоновская 28, Одесса">
+			</p>
+		<button class="modal-close" type="button"> 
+			<span class="visually-hidden">Закрыть</span>
+		</button>
+	</section>
+	<script src="js/modal-show.js"></script>
+	<script src="js/modal-close.js"></script>
+	<script src="js/modal-value.js"></script>
+</body>
+</html>
