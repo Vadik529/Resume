@@ -1,0 +1,34 @@
+<div class="converter-container">
+  <div class="input-group">
+    <label>Amount:</label>
+    <input type="number" [(ngModel)]="amount" (input)="convertCurrency()" />
+  </div>
+
+  <div class="input-group">
+    <label>From Currency:</label>
+    <select [(ngModel)]="fromCurrency" (change)="convertCurrencyFrom()">
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+    </select>
+  </div>
+
+  <div class="input-group">
+    <label>To Currency:</label>
+    <select [(ngModel)]="toCurrency" (change)="convertCurrencyTo()">
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+    </select>
+  </div>
+
+  <p>{{ amount }} {{ fromCurrency }} = {{ result }} {{ toCurrency }}</p>
+
+  <p class="exchange-rate">Exchange Rates:</p>
+  <p>1 UAH = {{ exchangeRates['USD'] }} USD</p>
+  <p>1 UAH = {{ exchangeRates['EUR'] }} EUR</p>
+  <p>1 UAH = {{ exchangeRates['GBP'] }} GBP</p>
+</div>
+

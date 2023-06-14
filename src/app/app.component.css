@@ -1,0 +1,33 @@
+.converter-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+  }
+  
+  select, input[type="number"] {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .exchange-rate {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
